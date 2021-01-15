@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 #bag {
     width: 200px;
@@ -15,10 +15,15 @@
 #bag-health {
     width: 200px;
     border: 2px solid black;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 .health_bar {
     background-color: darkred;
     height: 20px;
+}
+
+#controls {
+    width: 120px;
+    margin: 0 auto;
 }
