@@ -11,3 +11,14 @@
     background: url('./images/bag.png') center no-repeat;
     background-size: 80%;
 }
+
+#bag-health {
+    width: 200px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.health_bar {
+    background-color: darkred;
+    height: 20px;
+}
