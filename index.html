@@ -12,19 +12,19 @@
 <body>
     <div id="vue-app">
         <!-- bag image -->
-        <div id="bag">
+        <div id="bag" v-bind:class="{burst:ended}">
 
         </div>
         <!-- bag health -->
         <div id="bag-health">
-            <div class="health_bar">
+            <div v-bind:style= "{width:health + '%'}" class="health_bar">
 
             </div>
         </div>
         <!-- controls -->
         <div id="controls">
-            <button>punch</button>
-            <button>reset</button>
+            <button @click= 'punch()' v-show="!ended">punch</button>
+            <button @click= 'reset()'>reset</button>
         </div>
     </div>
     <script src="./app.js"></script>
